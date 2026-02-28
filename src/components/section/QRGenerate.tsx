@@ -7,7 +7,7 @@ import QRPreview from "../ui/QRPreview";
 import QRTypeNav, { QRType } from "../ui/QRTypeNav";
 import { FaDownload, FaEdit, FaInfinity } from "react-icons/fa";
 
-export default function LinkQR({ dark }: { dark: boolean }) {
+export default function NeoRCode({ dark }: { dark: boolean }) {
   const [activeType, setActiveType] = useState<QRType>("url");
   const [options, setOptions] = useState<Options>({
     width: 300,
@@ -46,7 +46,7 @@ export default function LinkQR({ dark }: { dark: boolean }) {
 
   return (
     <div
-      className="linkqr-container"
+      className="neorcode-container"
       style={{
         width: "100%",
         maxWidth: "1200px",
@@ -86,7 +86,7 @@ export default function LinkQR({ dark }: { dark: boolean }) {
         <QRTypeNav activeType={activeType} setActiveType={setActiveType} dark={dark} />
 
         <div
-          className="linkqr-layout"
+          className="neorcode-layout"
           style={{
             display: "flex",
             gap: "2rem",
@@ -109,11 +109,11 @@ export default function LinkQR({ dark }: { dark: boolean }) {
 
       <style jsx>{`
         @media (max-width: 900px) {
-          .linkqr-layout {
+          .neorcode-layout {
             flex-direction: column !important;
             align-items: center !important;
           }
-          .linkqr-layout > div {
+          .neorcode-layout > div {
             width: 100% !important;
           }
         }

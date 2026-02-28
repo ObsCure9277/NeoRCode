@@ -99,8 +99,8 @@ export default function Header({ dark, setDark }: HeaderProps) {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "0.75rem", zIndex: 201 }}>
           <img
-            src="/linkqr_favicon.svg"
-            alt="LinkQR Logo"
+            src="/neorcode_favicon.svg"
+            alt="NeoRCode Logo"
             style={{
               width: "2.2rem",
               height: "2.2rem",
@@ -109,7 +109,7 @@ export default function Header({ dark, setDark }: HeaderProps) {
             }}
           />
           <h1
-            className="linkqr-title"
+            className="neorcode-title"
             style={{
               color: "#000000",
               fontWeight: 900,
@@ -118,7 +118,7 @@ export default function Header({ dark, setDark }: HeaderProps) {
               margin: 0,
             }}
           >
-            LinkQRCode
+            NeoRCode
           </h1>
         </div>
         

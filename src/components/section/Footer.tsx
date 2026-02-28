@@ -45,7 +45,7 @@ export default function Footer({ dark }: FooterProps) {
         padding: "0 1rem" // Add padding to prevent edge touching on smaller screens
       }}>
         <span>
-          © 2025 LinkQR. All rights reserved.
+          © 2025 NeoRCode. All rights reserved.
         </span>
         <span>
           Developed by <a

@@ -22,23 +22,23 @@ export default function FAQ({ dark }: FAQProps) {
     },
     {
        question: "Are the created qr codes expiring?",
-       answer: "They do not expire and will work forever! QR Codes created with LinkQR are static and do not stop working after a certain time. You just can’t edit the content of the QR Codes again."
+       answer: "They do not expire and will work forever! QR Codes created with NeoRCode are static and do not stop working after a certain time. You just can’t edit the content of the QR Codes again."
     },
     {
        question: "Is there a scan limit for the QR codes?",
        answer: "There is no limit and the created QR code will work forever. Scan it is many times as you wish!"
     },
     {
-       question: "Is LinkQR saving my data?",
-       answer: "We do not save or reuse your data in any form. We cache your qr code image files for 24h on our server to optimize the performance of LinkQR."
+       question: "Is NeoRCode saving my data?",
+       answer: "We do not save or reuse your data in any form. We cache your qr code image files for 24h on our server to optimize the performance of NeoRCode."
     },
     {
        question: "My QR code is not working, what can I do?",
        answer: "There are many reasons why a QR code is not working correctly. At first check your entered data. Sometimes there are little typos in your URL that break your QR code. Some QR codes (like vCard) contain a lot of data. Try reducing the data you entered for your QR code when possible. This can make it easier for QR code scanner apps to read your code. Try to remove the logo in your QR code and check if this helps. Also make sure that there is enough contrast between the background and foreground of the QR code. The foreground should always be darker than the background."
     },
     {
-       question: "Does LinkQR work in all browsers?",
-       answer: "LinkQR needs a modern HTML5 capable browser and is officially supporting Chrome, Firefox, Safari, Edge and Internet Explorer 11."
+       question: "Does NeoRCode work in all browsers?",
+       answer: "NeoRCode needs a modern HTML5 capable browser and is officially supporting Chrome, Firefox, Safari, Edge and Internet Explorer 11."
     }
   ];
 

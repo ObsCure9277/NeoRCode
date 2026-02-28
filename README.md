@@ -1,10 +1,10 @@
-# 🔗 LinkQRCode
+# 🔗 NeoRCode
 
-A modern, feature-rich QR code generator web application that creates customizable QR codes for multiple data types. Built with **React**, **Next.js**, **TypeScript** and **Tailwind CSS**, LinkQR offers unlimited scans, high-resolution downloads, and extensive customization options—all completely free.
+A modern, feature-rich QR code generator web application that creates customizable QR codes for multiple data types. Built with **React**, **Next.js**, **TypeScript** and **Tailwind CSS**, NeoRCode offers unlimited scans, high-resolution downloads, and extensive customization options—all completely free.
 
-<img width="1851" height="952" alt="linkQRCode-showcase" src="https://github.com/user-attachments/assets/3b8e0f91-02d4-41bc-a226-1944fbfc14b4" />
+<img width="1851" height="952" alt="NeoRCode-showcase" src="https://github.com/user-attachments/assets/3b8e0f91-02d4-41bc-a226-1944fbfc14b4" />
 
-Live Preview 👉 <a href="https://linkqrcode.vercel.app">View Website</a>
+Live Preview 👉 <a href="https://neorcode.vercel.app">View Website</a>
 
 ---
 
@@ -121,8 +121,8 @@ Ensure you have the following installed:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/ObsCure9277/LinkQR.git
-   cd LinkQR
+   git clone https://github.com/ObsCure9277/NeoRCode.git
+   cd NeoRCode
    ```
 
 2. **Install dependencies:**
@@ -149,7 +149,7 @@ npm start
 ## 📂 Project Structure
 
 ```
-LinkQR/
+NeoRCode/
 ├── public/                 # Static assets
 ├── src/
 │   ├── app/               # Next.js app directory
@@ -234,7 +234,7 @@ LinkQR/
 
 ## 🌐 Browser Support
 
-LinkQR supports all modern browsers:
+NeoRCode supports all modern browsers:
 
 - ✅ Chrome (latest)
 - ✅ Firefox (latest)
@@ -250,8 +250,8 @@ Requires HTML5-capable browser with Canvas API support.
 
 ### Documentation
 
-- **FAQ Section:** Visit the [FAQ](https://linkqrcode.vercel.app#faq) on the live site
-- **About Section:** Learn more about features in the [About](https://linkqrcode.vercel.app#about) section
+- **FAQ Section:** Visit the [FAQ](https://neorcode.vercel.app#faq) on the live site
+- **About Section:** Learn more about features in the [About](https://neorcode.vercel.app#about) section
 
 ---
 

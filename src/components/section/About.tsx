@@ -14,12 +14,12 @@ export default function About({ dark }: AboutProps) {
     {
       icon: <FaInfinity />,
       title: "Unlimited scans",
-      text: "LinkQR also has no limitations. All generated QR codes will work forever, do not expire and have no scanning limits like you see at other commercial QR code generators. The created QR codes are static so the only limitation is that you can't edit the QR code again."
+      text: "NeoRCode also has no limitations. All generated QR codes will work forever, do not expire and have no scanning limits like you see at other commercial QR code generators. The created QR codes are static so the only limitation is that you can't edit the QR code again."
     },
     {
       icon: <FaImage />,
       title: "QR Codes with Logo",
-      text: "Put a custom brand on your QR code. With LinkQR it is very simple and straightforward to add a logo to your QR Code. The QR codes are still readable. Every QR code can have an error correction up to 30%. This means 30% of the QR code (excluding the corner elements) can be removed and the QR code is still working."
+      text: "Put a custom brand on your QR code. With NeoRCode it is very simple and straightforward to add a logo to your QR Code. The QR codes are still readable. Every QR code can have an error correction up to 30%. This means 30% of the QR code (excluding the corner elements) can be removed and the QR code is still working."
     },
     {
       icon: <FaPalette />,
@@ -29,7 +29,7 @@ export default function About({ dark }: AboutProps) {
     {
       icon: <FaPrint />,
       title: "High resolution QR Codes",
-      text: "LinkQR offers print quality QR codes with high resolutions. When creating your QR code set the pixel size to the highest resolution to create .png files in print quality. You can also download vector formats like .svg, .eps, .pdf for best possible quality."
+      text: "NeoRCode offers print quality QR codes with high resolutions. When creating your QR code set the pixel size to the highest resolution to create .png files in print quality. You can also download vector formats like .svg, .eps, .pdf for best possible quality."
     },
     {
       icon: <FaVectorSquare />,
