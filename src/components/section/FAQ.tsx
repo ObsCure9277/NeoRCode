@@ -52,7 +52,7 @@ export default function FAQ({ dark }: FAQProps) {
     <section 
       id="faq"
       style={{ 
-        padding: "4rem 1rem", 
+        padding: "6rem 1rem", 
         color: theme.panelText,
         display: "flex",
         justifyContent: "center"

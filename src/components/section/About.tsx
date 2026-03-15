@@ -14,101 +14,142 @@ export default function About({ dark }: AboutProps) {
     {
       icon: <FaInfinity />,
       title: "Unlimited scans",
-      text: "NeoRCode also has no limitations. All generated QR codes will work forever, do not expire and have no scanning limits like you see at other commercial QR code generators. The created QR codes are static so the only limitation is that you can't edit the QR code again."
+      text: "NeoRCode has no scan limits. Every generated QR stays active forever and never expires, making it ideal for long-term campaigns and printed materials."
     },
     {
       icon: <FaImage />,
       title: "QR Codes with Logo",
-      text: "Put a custom brand on your QR code. With NeoRCode it is very simple and straightforward to add a logo to your QR Code. The QR codes are still readable. Every QR code can have an error correction up to 30%. This means 30% of the QR code (excluding the corner elements) can be removed and the QR code is still working."
+      text: "Add your brand logo in seconds. NeoRCode keeps codes readable with error correction up to 30%, so your design still scans reliably."
     },
     {
       icon: <FaPalette />,
       title: "Custom Design and Colors",
-      text: "Make your QR code look really unique with our design and color options. You can customize the shape and form of the corner elements and the body of the QR code. You can also set your own colors for all QR code elements. Add a gradient color to the QR code body and make it really stand out."
+      text: "Shape, corners, colors, and gradients are fully customizable, so every QR can match your identity instead of looking generic."
     },
     {
       icon: <FaPrint />,
       title: "High resolution QR Codes",
-      text: "NeoRCode offers print quality QR codes with high resolutions. When creating your QR code set the pixel size to the highest resolution to create .png files in print quality. You can also download vector formats like .svg, .eps, .pdf for best possible quality."
+      text: "Export high-resolution files for posters, packaging, and banners. PNG output is print-ready and stays crisp at large sizes."
     },
     {
       icon: <FaVectorSquare />,
       title: "QR Code Vector Formats",
-      text: "Most free QR code makers only allow creating QR codes in low resolutions and do not offer vector formats. Use the offered vector formats to print QR Codes in huge resolutions without losing quality. We recommend the .svg format for further editing."
+      text: "Download vector formats including SVG, EPS, and PDF for clean scaling and easy editing in professional design tools."
     },
     {
       icon: <FaBriefcase />,
       title: "Free for commercial usage",
-      text: "All generated QR Codes are 100% free and can be used for whatever you want. This includes all commercial purposes."
+      text: "Every generated code is free to use, including business and commercial projects."
     }
   ];
 
   return (
-    <section 
+    <section
       id="about"
       style={{
-        background: theme.panelBackground, 
         color: theme.panelText,
         display: "flex",
-        justifyContent: "center"
+        justifyContent: "center",
+        padding: "6rem 1rem",
       }}
     >
-      <div style={{ width: "100%" }}>
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "1200px",
+        }}
+      >
         <style>
           {`
-            .features-grid {
+            .about-heading {
+              margin: 0;
+              font-size: clamp(2rem, 5vw, 3.2rem);
+              line-height: 1;
+              letter-spacing: -0.03em;
+              font-weight: 900;
+            }
+
+            .about-subheading {
+              margin: 0.8rem 0 0;
+              font-size: clamp(1rem, 2.5vw, 1.15rem);
+              max-width: 60ch;
+              opacity: 0.85;
+            }
+
+            .bento-grid {
               display: grid;
               grid-template-columns: 1fr;
+              gap: 1rem;
+              margin-top: 2rem;
             }
-            .feature-icon { font-size: 2rem; }
-            .feature-title { font-size: 1.25rem; }
-            .feature-text { font-size: 1rem; }
-            .about-card { padding: 2rem; }
 
-            @media (min-width: 768px) {
-              .about-card { padding: 4rem; } 
-              .features-grid {
-                grid-template-columns: 1fr 1fr;
+            .bento-card {
+              border: 2px solid ${theme.panelText};
+              border-radius: 0;
+              padding: 1.5rem;
+              background: ${theme.panelBackground};
+              box-shadow: 4px 4px 0px 0px ${theme.panelText};
+              transition: transform 0.25s ease, box-shadow 0.25s ease;
+            }
+
+            .bento-card:hover {
+              transform: translate(-2px, -2px);
+              box-shadow: 6px 6px 0px 0px ${theme.panelText};
+            }
+
+            .feature-head {
+              display: flex;
+              align-items: center;
+              gap: 0.85rem;
+              margin-bottom: 1rem;
+            }
+
+            .feature-icon {
+              color: ${theme.primary};
+              font-size: 1.8rem;
+              display: flex;
+              align-items: center;
+            }
+
+            .feature-title {
+              margin: 0;
+              font-size: 1.3rem;
+              line-height: 1.2;
+            }
+
+            .feature-text {
+              margin: 0;
+              line-height: 1.7;
+              opacity: 0.9;
+            }
+
+            @media (min-width: 900px) {
+              .bento-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1.25rem;
               }
-              .feature-icon { font-size: 60px; }
-              .feature-title { font-size: 30px; }
-              .feature-text { font-size: 20px; }
-              .about-card:nth-child(odd) {
-                border-right: 4px solid ${theme.panelText};
+
+              .bento-card {
+                padding: 1.8rem;
               }
             }
           `}
         </style>
-        <div className="features-grid" style={{borderBottom: `4px solid ${theme.panelText}`,}}>
+
+        <div className="bento-grid">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
-              className="about-card"
-              style={{ 
-                // Padding handled by CSS class .about-card
-                background: theme.panelBackground,
-                borderTop: `4px solid ${theme.panelText}`,
-              }}
+            <article
+              key={index}
+              className="bento-card"
             >
-              <div style={{ display: "flex", alignItems: "center", gap: "1.5rem", marginBottom: "1.8rem" }}>
-                <div 
-                  className="feature-icon"
-                  style={{ 
-                    color: theme.primary,
-                    display: "flex",
-                    alignItems: "center"
-                  }}
-                >
-                  {feature.icon}
-                </div>
-                <h3 className="feature-title" style={{ fontWeight: 600, margin: 0 }}>
+              <div className="feature-head">
+                <div className="feature-icon">{feature.icon}</div>
+                <h3 className="feature-title" style={{ fontWeight: 700 }}>
                   {feature.title}
                 </h3>
               </div>
-              <p className="feature-text" style={{ lineHeight: "1.6", opacity: 0.9 }}>
-                {feature.text}
-              </p>
-            </div>
+              <p className="feature-text">{feature.text}</p>
+            </article>
           ))}
         </div>
       </div>

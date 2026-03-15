@@ -25,6 +25,7 @@ export default function Home() {
       }}
     >
       <div
+        className="theme-grid-bg"
         style={{
           position: 'absolute',
           inset: 0,
@@ -38,6 +39,13 @@ export default function Home() {
               : `repeating-linear-gradient(0deg, #222 0px, #222 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, #222 0px, #222 1px, transparent 1px, transparent 64px)`,
         }}
       />
+      <style jsx>{`
+        @media (max-width: 768px) {
+          .theme-grid-bg {
+            display: none;
+          }
+        }
+      `}</style>
       <Header dark={dark} setDark={setDark} />
       <QRGenerate dark={dark} />
       <About dark={dark} />
