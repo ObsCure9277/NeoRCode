@@ -100,10 +100,10 @@ export default function QRConfiguration({ options, setOptions, dark, qrType }: Q
           alignItems: "center",
           justifyContent: "space-between",
           background: isActive ? theme.inputBg : "transparent",
-          color: isActive ? theme.primary : theme.panelText,
+          color: theme.panelText,
           fontWeight: "bold",
           borderBottom: `1px solid ${theme.border}`,
-          borderLeft: isActive ? `4px solid ${theme.primary}` : "4px solid transparent",
+          borderLeft: isActive ? `4px solid ${theme.panelText}` : "4px solid transparent",
           transition: "all 0.2s",
         }}
       >
@@ -111,7 +111,7 @@ export default function QRConfiguration({ options, setOptions, dark, qrType }: Q
           {icon}
           <span>{title}</span>
         </div>
-        {isActive ? <FaChevronUp color={theme.primary} /> : <FaChevronDown />}
+        {isActive ? <FaChevronUp color={theme.panelText} /> : <FaChevronDown />}
       </div>
     );
   };
