@@ -54,6 +54,9 @@ export default function QRPreview({ options, dark }: QRPreviewProps) {
       <div 
         ref={ref} 
         style={{ 
+            width: options.width ?? 300,
+            height: options.height ?? 300,
+            flex: "0 0 auto",
             boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.05)"
         }} 
       />

@@ -3,13 +3,9 @@
 import { useState } from 'react';
 import Header from '../components/section/Header';
 import Footer from '../components/section/Footer';
-import dynamic from 'next/dynamic';
-
-const QRGenerate = dynamic(() => import('../components/section/QRGenerate'), {
-  ssr: false,
-});
-const About = dynamic(() => import('../components/section/About'), { ssr: false });
-const FAQ = dynamic(() => import('../components/section/FAQ'), { ssr: false });
+import QRGenerate from '../components/section/QRGenerate';
+import About from '../components/section/About';
+import FAQ from '../components/section/FAQ';
 
 export default function Home() {
   const [dark, setDark] = useState(false);
