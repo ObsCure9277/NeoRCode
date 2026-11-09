@@ -14,6 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "NeoRCode",
+  description:
+    "Create customizable QR codes for URLs, text, and more. Download free QR codes with custom colors, logos, and high-resolution formats.",
 };
 
 export default function RootLayout({

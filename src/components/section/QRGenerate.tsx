@@ -58,7 +58,7 @@ export default function NeoRCode({ dark }: { dark: boolean }) {
         alignItems: "center",
       }}
     >
-      <div className="hidden md:block" style={{ textAlign: "center", marginBottom: "3rem", marginTop: 0, width: "100%"}}>
+      <div style={{ textAlign: "center", marginBottom: "3rem", marginTop: 0, width: "100%"}}>
         <h1 style={{ 
           fontSize: "3rem", 
           fontWeight: 900, 

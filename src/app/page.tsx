@@ -15,7 +15,7 @@ export default function Home() {
   const [dark, setDark] = useState(false);
 
   return (
-    <main
+    <div
       style={{
         minHeight: '100vh',
         background: dark ? '#fff' : '#000',
@@ -47,10 +47,12 @@ export default function Home() {
         }
       `}</style>
       <Header dark={dark} setDark={setDark} />
-      <QRGenerate dark={dark} />
-      <About dark={dark} />
-      <FAQ dark={dark} />
+      <main>
+        <QRGenerate dark={dark} />
+        <About dark={dark} />
+        <FAQ dark={dark} />
+      </main>
       <Footer dark={dark} />
-    </main>
+    </div>
   );
 }

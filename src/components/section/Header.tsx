@@ -108,7 +108,7 @@ export default function Header({ dark, setDark }: HeaderProps) {
               verticalAlign: "middle",
             }}
           />
-          <h1
+          <span
             className="neorcode-title"
             style={{
               color: "#000000",
@@ -119,7 +119,7 @@ export default function Header({ dark, setDark }: HeaderProps) {
             }}
           >
             NeoRCode
-          </h1>
+          </span>
         </div>
         
         {/* Desktop Nav: Links + Toggle */}
@@ -168,6 +168,10 @@ export default function Header({ dark, setDark }: HeaderProps) {
           {/* Mobile Menu Button */}
           <button 
             className="mobile-menu-btn"
+            type="button"
+            aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -177,7 +181,11 @@ export default function Header({ dark, setDark }: HeaderProps) {
         </div>
 
         {/* Mobile Menu Overlay */}
-        <div className={`mobile-menu-overlay ${isMenuOpen ? 'open' : ''}`}>
+        <nav
+          id="mobile-navigation"
+          className={`mobile-menu-overlay ${isMenuOpen ? 'open' : ''}`}
+          aria-label="Mobile navigation"
+        >
            <a 
               href="#about" 
               style={{ 
@@ -212,7 +220,7 @@ export default function Header({ dark, setDark }: HeaderProps) {
             >
               FAQ
             </a>
-        </div>
+        </nav>
       </div>
     </header>
   );
