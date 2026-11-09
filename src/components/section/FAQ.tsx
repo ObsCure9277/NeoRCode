@@ -60,7 +60,7 @@ export default function FAQ({ dark }: FAQProps) {
     >
       <div style={{ maxWidth: "800px", width: "100%" }}>
          <div style={{ textAlign: "center", marginBottom: "3rem" }}>
-          <h2 style={{ fontSize: "2rem", fontWeight: 700, marginBottom: "1rem" }}>
+          <h2 style={{ fontSize: "clamp(2rem, 5vw, 3.2rem)", fontWeight: 700, marginBottom: "1rem" }}>
             Frequently Asked Questions
           </h2>
         </div>

@@ -67,6 +67,8 @@ export default function About({ dark }: AboutProps) {
               line-height: 1;
               letter-spacing: -0.03em;
               font-weight: 900;
+              text-align: center;
+              margin-bottom: 56px;
             }
 
             .about-subheading {
@@ -105,7 +107,7 @@ export default function About({ dark }: AboutProps) {
             }
 
             .feature-icon {
-              color: ${theme.primary};
+              color: ${dark ? theme.primary : "#80B8FF"};
               font-size: 1.8rem;
               display: flex;
               align-items: center;
@@ -136,6 +138,7 @@ export default function About({ dark }: AboutProps) {
           `}
         </style>
 
+        <h2 className="about-heading">Why NeoRCode?</h2>
         <div className="bento-grid">
           {features.map((feature, index) => (
             <article
